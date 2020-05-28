@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{背景介绍}{3}{0}{1}
+\beamer@sectionintoc {2}{论文结构}{4}{0}{2}
+\beamer@sectionintoc {3}{主要内容}{5}{0}{3}
+\beamer@sectionintoc {4}{结论}{15}{0}{4}

@@ -1,0 +1,5 @@
+\frametitle{变量分析}
+\begin{figure}
+        \includegraphics[width=5cm]{Pic/shap_summary.png}
+        \caption{特征Shap值分布}
+    \end{figure}

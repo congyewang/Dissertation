@@ -1,0 +1,80 @@
+\section{主要内容}
+
+
+\begin{frame}[fragile]{样本结构}
+    \begin{figure}
+        \includegraphics[width=11cm]{Pic/样本审计意见分类图.png}
+        \caption{审计意见分类}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{样本结构}
+    \begin{figure}
+        \includegraphics[width=11cm]{Pic/样本比例.png}
+        \caption{各行业比例}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{样本结构}
+    \begin{figure}
+        \includegraphics[width=11cm]{Pic/样本中非标准意见分布.png}
+        \caption{非标准意见分布}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{模型结构}
+    \begin{figure}
+        \includegraphics[width=10cm]{Pic/模型结构.pdf}
+        \caption{模型结构}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{模型评价}
+    \begin{table}[]
+        \caption{模型判别预测准确率}
+        \begin{tabular}{ccccc}
+        \toprule
+        \multirow{3}{*}{观测值}  & \multicolumn{4}{c}{预测类型}                                     \\ \cline{2-5}
+                                & \multicolumn{3}{c}{异常类型}          & \multirow{2}{*}{准确率(\%)} \\ \cline{2-4}
+                                &           & $Y_{i}=0$ & $Y_{i}=1$ &                          \\ \hline
+        \multirow{2}{*}{异常类型} & $Y_{i}=0$ & TP=28947  & FP=0      & 100                      \\
+                                & $Y_{i}=1$ & FN=14     & TN=977    & 98.59                    \\ \cline{1-2}
+        \multicolumn{2}{c}{整体准确率}         & TPR=99.95 & FPR=0     & 99.95                    \\ \bottomrule
+        \end{tabular}
+        \end{table}
+\end{frame}
+
+\begin{frame}[fragile]{模型评价}
+    $$ACC=\frac{TP+TN}{P+N}=99.95\%$$
+    $$PRE=\frac{TP}{TP+FP}=100\%$$
+    $$REC=\frac{TP}{TP+FN}=98.59\%$$
+    $$F_{1}-Score=\frac{2}{\frac{1}{PRE}\frac{1}{REC}}=99.47\%$$
+\end{frame}
+
+\begin{frame}[fragile]{模型评价}
+    \begin{figure}
+        \includegraphics[width=10cm]{Pic/ROC_AUC.png}
+        \caption{ROC-AUC曲线}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{变量分析}
+    \begin{figure}
+        \includegraphics[width=11cm]{Pic/均值降低精度.png}
+        \caption{均值降低精度}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{变量分析}
+    \begin{figure}
+        \includegraphics[width=11cm]{Pic/特征重要性排序.png}
+        \caption{特征重要性排序}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{变量分析}
+    \begin{figure}
+        \includegraphics[width=5cm]{Pic/shap_summary.png}
+        \caption{特征Shap值分布}
+    \end{figure}
+\end{frame}

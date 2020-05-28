@@ -1,0 +1,80 @@
+\documentclass[12pt]{ctexbeamer}
+
+    %主题和色彩风格
+    % http://latex.artikel-namsu.de/english/themes/uebersicht_beamer.html
+    % \usetheme{metropolis}
+    % \usetheme{Madrid}
+    % \usetheme{Pittsburgh}
+    % \usetheme{Copenhagen}
+    % \usetheme{Boadilla}
+
+    \usetheme{Frankfurt}
+    \usecolortheme{orchid}
+
+    \usefonttheme{serif}              % 使用衬线字体
+    \usefonttheme{professionalfonts}  % 数学公式字体
+    \usepackage{mathtools}
+
+    % \usepackage{appendixnumberbeamer}
+    % \usepackage{pdfpages}
+    \usepackage{booktabs}
+    % \usepackage[scale=2]{ccicons}
+
+    % \usepackage{pgfplots}
+    % \usepgfplotslibrary{dateplot}
+
+    \usepackage{xspace}
+    % \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+    \usepackage{multirow}
+
+    \renewcommand {\thetable}{\thesection{}.\arabic{table}}
+    \renewcommand {\thefigure}{\thesection{}.\arabic{figure}}
+
+    \title{基于LightGBM分类的上市公司财务报表舞弊识别研究}
+    % \subtitle{2020年毕业论文答辩}
+    \date{}
+    \author{答辩人: 会计1610王淙烨 \qquad \newline 指导老师: 孙景翠 \newline}
+    % \institute{东北农业大学}
+    % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 说明
+%
+% \section{}命令是分节
+%
+% \begin{frame}[fragile]{%此处添加标题} \end{frame}
+%
+% \begin{verbatim} 此处是中间凸出位置，可以放latex代码\end{verbatim}
+%
+% \href{网址}{文字}
+%
+% \emph{斜体}
+%
+% \begin{itemize}是无序列表
+% \item <内容>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 目录
+\input{Chapter/0_tableofcontent.tex}
+
+% 设计目的与意义
+\input{Chapter/1_introduction.tex}
+
+% 论文结构和主要内容
+\input{Chapter/2_structure.tex}
+
+% 详细工作
+\input{Chapter/3_details.tex}
+
+% 结论
+\input{Chapter/4_results.tex}
+
+% 结语
+\input{Chapter/5_finished.tex}
+
+\end{document}
